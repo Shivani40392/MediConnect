@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import { useState } from 'react'
-import { Button } from '@mui/material'
+
 const Doctors = () => {
   const navigate = useNavigate()
   const { speciality } = useParams()
