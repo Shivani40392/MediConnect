@@ -36,7 +36,7 @@ const Navbar = () => {
           <hr className='border-none outline-one h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
       </ul>
-      <div >
+     
         <a
           href="https://mediconnect-admin-795o.onrender.com"
           target="_blank"
@@ -47,7 +47,7 @@ const Navbar = () => {
           <span>ADMIN</span>
         </a>
 
-      </div>
+      
       <div className='flex items-center gap-4'>
         {
           token && userData ? <div className='flex items-center gap-2 cursor-pointer group relative' >
