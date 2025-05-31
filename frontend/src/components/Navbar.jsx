@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className='flex items-center gap-4'>
         {
           token && userData ? <div className='flex items-center gap-2 cursor-pointer group relative' >
-            <img className='w-8 rounded-full' src={assets.admin_logo} alt="" />
+            <img className='w-5 rounded-full' src={assets.admin_logo} alt="" />
             <img className='w-8 rounded-full' src={userData.image} alt="" />
             <img className='w-2.5 rounded-full' src={assets.dropdown_icon} alt="" />
             <div className="absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block">
