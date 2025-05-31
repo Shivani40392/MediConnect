@@ -41,7 +41,7 @@ const Navbar = () => {
           token && userData ? <div className='flex items-center gap-2 cursor-pointer group relative' >
             <div >
               <a
-                href="https://admin.mediconnect.com/dashboard"
+                href="https://mediconnect-admin-795o.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-blue-800 text-sm hover:underline"
