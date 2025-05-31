@@ -41,7 +41,7 @@ const Navbar = () => {
           href="https://mediconnect-admin-795o.onrender.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center text-blue-800 text-xxs hover:underline gap-7"
+          className="flex flex-col items-center text-blue-800 text-xxs hover:underline "
         >
           <img className='w-5 rounded-full' src={assets.admin_logo} alt="Admin Logo" />
           <span>ADMIN</span>
