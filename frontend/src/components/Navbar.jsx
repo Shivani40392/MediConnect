@@ -14,7 +14,7 @@ const Navbar = () => {
   }
   return (
     <div className='flex item-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
-      <div className='flex  items-center '>
+      <div className='flex   '>
                      <img className='mb-5 w-20' src={assets.logo_find} alt="icon"/>
                      <p className='font-medium text-blue-800 text-3xl justify-center -ml-3  '>MediConnect</p></div>
       <ul className='hidden md:flex items-start gap-5 font-medium'>
