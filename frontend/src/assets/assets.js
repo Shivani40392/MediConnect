@@ -37,7 +37,7 @@ import Gynecologist from './Gynecologist.svg'
 import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
 import logo_find from './logo_find.jpg'
-import admin_logo from './admin_logo'
+import admin_logo from './admin_icon'
 
 export const assets = {
     appointment_img,
