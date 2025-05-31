@@ -36,12 +36,12 @@ const Navbar = () => {
           <hr className='border-none outline-one h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
       </ul>
-      <div className='flex items-center'>
+      <div className='flex items-center mt-2'>
         <a
           href="https://mediconnect-admin-795o.onrender.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center text-blue-800 text-xs hover:underline"
+          className="flex flex-col items-center text-blue-800 text-xxs hover:underline"
         >
           <img className='w-5 rounded-full' src={assets.admin_logo} alt="Admin Logo" />
           <span>ADMIN</span>
