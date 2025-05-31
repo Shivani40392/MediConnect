@@ -41,7 +41,7 @@ const Navbar = () => {
           token && userData ? <div className='flex items-center gap-2 cursor-pointer group relative' >
             <div className='flex flex-col'>
             <img className='w-5 rounded-full' src={assets.admin_logo} alt="" />
-            <div className='text-blue-800 text-1xl justify-center'>ADMIN</div>
+            <div className='text-blue-800 text-sm justify-center'>ADMIN</div>
             </div>
             <img className='w-8 rounded-full' src={userData.image} alt="" />
             <img className='w-2.5 rounded-full' src={assets.dropdown_icon} alt="" />
