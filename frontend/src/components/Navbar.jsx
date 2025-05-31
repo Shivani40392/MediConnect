@@ -36,7 +36,7 @@ const Navbar = () => {
           <hr className='border-none outline-one h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
       </ul>
-      <div className='flex items-center mt-2  gap-10'>
+      <div className='flex items-center mt-2  '>
         <a
           href="https://mediconnect-admin-795o.onrender.com"
           target="_blank"
