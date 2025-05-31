@@ -5,18 +5,18 @@ import { AppContext } from '../context/AppContext';
 const Navbar = () => {
   const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
-  const {token, setToken,userData} = useContext(AppContext)
+  const { token, setToken, userData } = useContext(AppContext)
 
 
-  const logout=()=>{
+  const logout = () => {
     setToken(false)
     localStorage.removeItem('token')
   }
   return (
     <div className='flex item-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
       <div className='flex  items-center '>
-                     <img className='mb-5 w-20' src={assets.logo_find} alt="icon"/>
-                     <p className='font-medium text-blue-800 text-3xl justify-center -ml-3  '>MediConnect</p>
+        <img className='mb-5 w-20' src={assets.logo_find} alt="icon" />
+        <p className='font-medium text-blue-800 text-3xl justify-center -ml-3  '>MediConnect</p>
       </div>
       <ul className='hidden md:flex items-center gap-5 font-medium'>
         <NavLink to='/'>
@@ -39,9 +39,17 @@ const Navbar = () => {
       <div className='flex items-center gap-4'>
         {
           token && userData ? <div className='flex items-center gap-2 cursor-pointer group relative' >
-            <div className='flex flex-col'>
-            <img className='w-5 rounded-full' src={assets.admin_logo} alt="" />
-            <div className='text-blue-800 text-sm justify-center'>ADMIN</div>
+            <div >
+              <a
+                href="https://admin.mediconnect.com/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center text-blue-800 text-sm hover:underline"
+              >
+                <img className='w-5 rounded-full' src={assets.admin_logo} alt="Admin Logo" />
+                <span>ADMIN</span>
+              </a>
+
             </div>
             <img className='w-8 rounded-full' src={userData.image} alt="" />
             <img className='w-2.5 rounded-full' src={assets.dropdown_icon} alt="" />
@@ -62,10 +70,10 @@ const Navbar = () => {
             <img className='w-7' onClick={() => setShowMenu(false)} src={assets.cross_icon} alt="" />
           </div>
           <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
-            <NavLink  onClick={()=>setShowMenu(false) } to='/'><p className='px-4 py-2 rounded  inline-block'>Home</p></NavLink>
-            <NavLink  onClick={()=>setShowMenu(false) } to='/doctors'><p className='px-4 py-2 rounded  inline-block'>ALL DOCTORS</p></NavLink>
-            <NavLink  onClick={()=>setShowMenu(false) } to='/about'><p className='px-4 py-2 rounded  inline-block'>ABOUT</p></NavLink>
-            <NavLink   onClick={()=>setShowMenu(false) } to='contact'><p>CONTACT</p></NavLink>
+            <NavLink onClick={() => setShowMenu(false)} to='/'><p className='px-4 py-2 rounded  inline-block'>Home</p></NavLink>
+            <NavLink onClick={() => setShowMenu(false)} to='/doctors'><p className='px-4 py-2 rounded  inline-block'>ALL DOCTORS</p></NavLink>
+            <NavLink onClick={() => setShowMenu(false)} to='/about'><p className='px-4 py-2 rounded  inline-block'>ABOUT</p></NavLink>
+            <NavLink onClick={() => setShowMenu(false)} to='contact'><p>CONTACT</p></NavLink>
           </ul>
         </div>
       </div>
