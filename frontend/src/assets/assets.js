@@ -37,7 +37,7 @@ import Gynecologist from './Gynecologist.svg'
 import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
 import logo_find from './logo_find.jpg'
-
+import admin_logo from './admin_logo'
 
 export const assets = {
     appointment_img,
@@ -57,7 +57,8 @@ export const assets = {
     upload_icon,
     stripe_logo,
     razorpay_logo,
-    logo_find
+    logo_find,
+    admin_logo
     
 }
 
